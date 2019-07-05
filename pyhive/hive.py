@@ -163,7 +163,7 @@ class Connection(object):
 
                 def sasl_factory():
                     sasl_client = sasl.Client()
-                    sasl_client.setAttr('host', host)
+                    sasl_client.setAttr('host', "hadoop")
                     if sasl_auth == 'GSSAPI':
                         sasl_client.setAttr('service', kerberos_service_name)
                     elif sasl_auth == 'PLAIN':
